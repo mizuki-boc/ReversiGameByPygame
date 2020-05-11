@@ -28,25 +28,25 @@ class Othello():
         pygame.init()
         #イメージロード
         self.screen = pygame.display.set_mode((swidth,sheight))
-        self.bg = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloBoard2.png").convert_alpha()
-        #self.cursor = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloCursor.png").convert_alpha()
-        self.blackImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloB2G.png").convert_alpha()
-        self.whiteImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloW2G.png").convert_alpha()
-        self.InfoImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloInfo2.png").convert_alpha()
-        self.CWImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloCW.png").convert_alpha()
-        self.CBImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloCB.png").convert_alpha()
-        self.n0Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello0.png").convert_alpha()
-        self.n1Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello1.png").convert_alpha()
-        self.n2Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello2.png").convert_alpha()
-        self.n3Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello3.png").convert_alpha()
-        self.n4Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello4.png").convert_alpha()
-        self.n5Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello5.png").convert_alpha()
-        self.n6Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello6.png").convert_alpha()
-        self.n7Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello7.png").convert_alpha()
-        self.n8Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello8.png").convert_alpha()
-        self.n9Image = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello9.png").convert_alpha()
-        self.WinImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloWin.png").convert_alpha()
-        self.GSImage = pygame.image.load("/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthelloGS.png").convert_alpha()
+        self.bg = pygame.image.load("pyOthelloImages/pyOthelloBoard2.png").convert_alpha()
+        #self.cursor = pygame.image.load("pyOthelloImages/pyOthelloCursor.png").convert_alpha()
+        self.blackImage = pygame.image.load("pyOthelloImages/pyOthelloB2G.png").convert_alpha()
+        self.whiteImage = pygame.image.load("pyOthelloImages/pyOthelloW2G.png").convert_alpha()
+        self.InfoImage = pygame.image.load("pyOthelloImages/pyOthelloInfo2.png").convert_alpha()
+        self.CWImage = pygame.image.load("pyOthelloImages/pyOthelloCW.png").convert_alpha()
+        self.CBImage = pygame.image.load("pyOthelloImages/pyOthelloCB.png").convert_alpha()
+        self.n0Image = pygame.image.load("pyOthelloImages/pyOthello0.png").convert_alpha()
+        self.n1Image = pygame.image.load("pyOthelloImages/pyOthello1.png").convert_alpha()
+        self.n2Image = pygame.image.load("pyOthelloImages/pyOthello2.png").convert_alpha()
+        self.n3Image = pygame.image.load("pyOthelloImages/pyOthello3.png").convert_alpha()
+        self.n4Image = pygame.image.load("pyOthelloImages/pyOthello4.png").convert_alpha()
+        self.n5Image = pygame.image.load("pyOthelloImages/pyOthello5.png").convert_alpha()
+        self.n6Image = pygame.image.load("pyOthelloImages/pyOthello6.png").convert_alpha()
+        self.n7Image = pygame.image.load("pyOthelloImages/pyOthello7.png").convert_alpha()
+        self.n8Image = pygame.image.load("pyOthelloImages/pyOthello8.png").convert_alpha()
+        self.n9Image = pygame.image.load("pyOthelloImages/pyOthello9.png").convert_alpha()
+        self.WinImage = pygame.image.load("pyOthelloImages/pyOthelloWin.png").convert_alpha()
+        self.GSImage = pygame.image.load("pyOthelloImages/pyOthelloGS.png").convert_alpha()
         pygame.display.set_caption("pyOthello")
         self.rect_bg = self.bg.get_rect()
         self.rect_black = self.blackImage.get_rect()
@@ -70,7 +70,7 @@ class Othello():
         bnum1 = bnum - 10 * bnum10
         wnum10 = wnum // 10
         wnum1 = wnum - 10 * wnum10
-        fn = "/Users/mizuki/Desktop/pygameImage/pyOthelloImages/pyOthello"
+        fn = "pyOthelloImages/pyOthello"
         #白は10のくらいは800,300,1のくらいは850,300
         #黒は10のくらいは800,240,1のくらいは850,240
         #if wnum1 == 1: self.screen.blit(pygame.image.load(fn+"0.png").convert_alpha(),(850,240))
